@@ -1,32 +1,35 @@
 # 蟬鳴Charming | 互聯網不會遺忘
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9a015625-5488-4f80-ac93-741bf34047ba/deploy-status)](https://app.netlify.com/sites/flamboyant-stonebraker-aa29ba/deploys)
+
 > 蟬鳴前端文件 使用 Element UI 搭建
 
-*本 Git Repo 內文件 Element UI 部分使用 MIT License 進行似有再分發，其他代碼歸一群肥宅（深圳）網絡空間有限公司版權所有*
+*本 Git Repo 內文件 Element UI 部分使用 MIT License 進行私有再分發*
+*本 Git Repo 內其他文件歸 一群肥宅（深圳）網絡空間有限公司 版權所有*
 
-## Environment
+## 環境
 
 `Node >= 6`
 
-## Start
+## 101 初始化
 
- - Clone
- - Install dependencies
+ - 克隆
+ - 安裝依賴
 
 ``` bash
 yarn
 ```
 
-## Develop
+## 102 開發
 
 ``` bash
-# serve with hot reload at localhost:8010
+# 本地開發熱更新 localhost:8010
 npm run dev
 ```
 
-## Build
+## 103 分發
 
 ``` bash
-# build for production with minification
+# 生產模式 代碼混淆
 npm run build
 ```
