@@ -4,7 +4,7 @@
 
 > 蟬鳴前端文件 使用 Element UI 搭建
 
-*本 Git Repo 內文件 Element UI 部分使用 MIT License 進行私有再分發*
+*本 Git Repo 內文件 Element UI 部分使用 MIT License 進行私有再分發*  
 *本 Git Repo 內其他文件歸 一群肥宅（深圳）網絡空間有限公司 版權所有*
 
 ## 環境
