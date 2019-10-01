@@ -4,8 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>蝉鸣</title>
-
+        <title>蟬鳴</title>
+        <!-- Image -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#603cba">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Manifest -->
+        <link rel="manifest" href="/static/manifest.json">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:700&amp;display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -51,10 +59,16 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .add-button {
+                position: absolute;
+                top: 1px;
+                left: 1px;
+            }
         </style>
     </head>
     <body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
+        <div class="body-wrap boxed-container">
         <header class="site-header">
         <div class="flex-center position-ref full-height">
         <div class="top-right links">
@@ -88,11 +102,14 @@
                 <div class="container">
                     <div class="hero-inner">
 						<div class="hero-copy">
-	                        <h1 class="hero-title mt-0">蟬鳴之聲<br/>必有迴響</h1>
-	                        <p class="hero-paragraph">Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever.</p>
+	                        <h1 class="hero-title mt-0"><font color="#c0a46b">蟬鳴</font>之聲<br/>必有迴響</h1>
+	                        <p class="hero-paragraph">沒有紀錄，就沒有發生。但是在蟬鳴，我們認為每一個聲音，都應該被時代所凝記。在蟬鳴，我們提供創作與公共討論空間。蟬鳴結合 IPFS 「Interplanetary File System」 星際文件系統技術，讓文字永續。</p>
 	                        <div class="hero-cta">
-								<a class="button button-primary" href="#">Buy it now</a>
-								
+                            @auth
+                                    <a class="button button-primary" href="{{ url('/home') }}">進入您的專屬時間軸</a>
+                            @else
+                                   <a class="button button-primary" href="{{ route('register') }}">註冊蟬鳴</a>
+                            @endauth
 							</div>
 						</div>
 						<div class="hero-media">
@@ -118,8 +135,8 @@
 					<div class="features-inner section-inner has-bottom-divider">
 						<div class="features-header text-center">
 							<div class="container-sm">
-								<h2 class="section-title mt-0">The Product</h2>
-	                            <p class="section-paragraph">Lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation.</p>
+								<h2 class="section-title mt-114 intro">蟬鳴聲響</h2>
+	                            <p class="section-paragraph">蟬鳴是一個以分佈式網絡為基礎的公共討論平台。所有在蟬鳴上發佈的作品與評論，皆會上載到星際文件系統的節點上，實現作品內容的分佈式存儲，完成將數據回歸創作者的第一步。</p>
 								<div class="features-image">
 									<img class="features-illustration asset-dark" src="images/features-illustration-dark.svg" alt="Feature illustration">
 									<img class="features-box asset-dark" src="images/features-box-dark.svg" alt="Feature box">
@@ -138,8 +155,8 @@
 										<img class="asset-dark" src="images/feature-01-dark.svg" alt="Feature 01">
                                     </div>
 									<div class="feature-content">
-                                    	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                    	<h3 class="feature-title mt-0">公共記憶</h3>
+                                    	<p class="text-sm mb-0">公共記憶永久儲存，當事人對社會運動的完整記錄。我們當下的恐懼與期待。如何量化中國互聯網的網絡衝擊？</p>
 									</div>
 								</div>
                             </div>
@@ -150,8 +167,8 @@
 										<img class="asset-dark" src="images/feature-02-dark.svg" alt="Feature 02">
                                     </div>
 									<div class="feature-content">
-                                    	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                    	<h3 class="feature-title mt-0">公共議題</h3>
+                                    	<p class="text-sm mb-0">平連為圖教成王，點是治低種省，萬 9 拋須蹦。證從周運下便米決過那裝，於省器進 P 抓邊金。知細收一織類，完性命很這，油霸化專金。音務中採維切那，我天處所解合經年，圓楊其易利棗。</p>
 									</div>
 								</div>
                             </div>
@@ -162,8 +179,8 @@
 										<img class="asset-dark" src="images/feature-03-dark.svg" alt="Feature 03">
                                     </div>
 									<div class="feature-content">
-                                    	<h3 class="feature-title mt-0">Discover</h3>
-                                    	<p class="text-sm mb-0">Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua dui.</p>
+                                    	<h3 class="feature-title mt-0">公共平台</h3>
+                                    	<p class="text-sm mb-0">屬構品經達稱幾眼，連人速是滿段見把，則路世拒性。表不酸南戰府熱易都，如得結地少通出全，提構嗚權板卻。標看民由就任性查變龍，調重反造最列沒氣，示少 A 計西牠呀建。</p>
 									</div>
 								</div>
                             </div>
@@ -172,7 +189,7 @@
                 </div>
             </section>
 
-			<section class="cta section">
+			<!--<section class="cta section">
                 <div class="container-sm">
                     <div class="cta-inner section-inner">
                         <div class="cta-header text-center">
@@ -184,7 +201,7 @@
 					    </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
         </main>
 
         <footer class="site-footer has-top-divider">
@@ -198,16 +215,16 @@
                     </div>
                     <ul class="footer-links list-reset">
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#">聯繫我們</a>
                         </li>
                         <li>
-                            <a href="#">About us</a>
+                            <a href="#">關於我們</a>
                         </li>
                         <li>
-                            <a href="#">FAQ's</a>
+                            <a href="#">FAQ</a>
                         </li>
                         <li>
-                            <a href="#">Support</a>
+                            <a href="#">需要幫助？</a>
                         </li>
                     </ul>
                     <ul class="footer-social-links list-reset">
@@ -236,12 +253,18 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2019 Usagi Ryuu, All Rights Reserved</div>
+                    <div class="footer-copyright">&copy; 2019 蟬鳴 劉笙緣<br/><br/>運營團隊： Lovelive Limited<br/>註冊地：紐西蘭<br/>NZBN: 9429046650252</div>
                 </div>
             </div>
         </footer>
     </div>
-
     <script src="js/main.min.js"></script>
-</body>
+    <!--<script>
+        if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+                .register('/sw.js')
+                .then(function() { console.log("Service Worker Registered"); });
+        }
+    </script>-->
+    </body>
 </html>
