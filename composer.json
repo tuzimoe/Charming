@@ -10,6 +10,7 @@
     "require": {
         "php": "^7.1.3",
         "andach/ipfs-laravel": "dev-master",
+        "area17/twill": "1.2.*",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
         "laravel/telescope": "^2.1",

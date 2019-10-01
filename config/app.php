@@ -168,7 +168,7 @@ return [
         /*
          * Package Service Providers...
          */
-
+        A17\Twill\TwillServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -229,6 +229,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        
 
     ],
 
